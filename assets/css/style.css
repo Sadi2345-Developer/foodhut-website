@@ -1,0 +1,1006 @@
+/* sec 1 and 2 start */
+:root {
+  --text-color: #F54748;
+  --background-color: #ebdddd;
+  --background-color2: #f8f2f6;
+  --text-color-sec2: #ff8383;
+}
+
+body {
+  background: linear-gradient(-30deg, var(--background-color), var(--background-color2));
+}
+
+/* ===== NAVBAR ===== */
+.nav-links-gap {
+  gap: 2rem;
+}
+
+.nav-links-gap .nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.nav-download-btn {
+  padding: 0.45rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== SECTION 1 ===== */
+.text-1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.same {
+  color: var(--text-color);
+}
+
+.orange {
+  color: rgb(224, 135, 19);
+}
+
+.sectext {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.sec2 {
+  color: var(--text-color);
+}
+
+/* Search bar */
+.search-box {
+  width: 20rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.8rem;
+}
+
+.search-box input {
+  flex: 1;
+  font-size: 0.92rem;
+  padding: 0.2rem 0;
+}
+
+.search-icon {
+  font-size: 1rem;
+  color: #555;
+  margin-right: 0.4rem;
+}
+
+.search-btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  background: #f6b84c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+/* Play icon */
+.play-icon {
+  width: 38px;
+  height: 38px;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Hero image */
+.hero-img {
+  margin-right: -2rem;
+}
+
+/* ===== HERO SECTION ARROWS ===== */
+.header-section {
+  position: relative;
+}
+
+.header-background {
+  position: relative;
+}
+
+/* Arrow 1 — starts at navbar logo level, curves down to "We're Serious" heading */
+.hero-arrow-1 {
+  position: absolute;
+  top: -20px;
+  left: 240px;
+  width: 100px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Arrow 1 Stroke — arrowhead at the tip/end of arrow1 curve */
+.hero-arrow-1-stroke {
+  position: absolute;
+  top: 80px;
+  left: 330px;
+  width: 18px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Arrow 2 — top-right, between navbar "Download App" and hero image */
+.hero-arrow-2 {
+  position: absolute;
+  top: 30px;
+  right: 55px;
+  width: 90px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Arrow 2 Stroke — small arrowhead at top-end of arrow2, pointing toward Download App */
+.hero-arrow-2-stroke {
+  position: absolute;
+  top: 13px;
+  right: 92px;
+  width: 18px;
+  z-index: 11;
+  pointer-events: none;
+}
+
+/* Arrow 3 — below the Download App button in hero left col */
+.hero-arrow-3 {
+  display: block;
+  width: 20px;
+  margin-top: 35px;
+  margin-left: 10px;
+  pointer-events: none;
+}
+ /* sec2 start */
+ .sec2-wrapper {
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top-left dot pattern image */
+.sec2-dots-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;     /* apni image ke size ke hisaab se adjust karein */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bottom-right rosemary image */
+.sec2-rosemary-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;     /* apni image ke size ke hisaab se adjust karein */
+  pointer-events: none;
+  z-index: 0;
+}
+.food-card-btn:hover { background-color: #c4101f; }
+.food-card-btn{
+   position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 58%;
+  white-space: nowrap;
+  z-index: 5;
+}
+ /* sec2 end */
+/* section 3 text design */
+.textsec3 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.text1sec3 {
+  color: var(--text-color);
+}
+
+.text2sec3 {
+  color: rgb(224, 135, 19);
+}
+
+/* IMAGE SIZE (thori bari like figma) */
+.chef-img {
+  max-width: 420px;
+}
+
+/* ICON SIZE (tum yahan images lagao gi) */
+.icon {
+  width: 20px;
+  height: 20px;
+}
+/* sec 4 start */
+
+.menu-section {
+  background: linear-gradient(-30deg, var(--background-color), var(--background-color2));
+  padding-top: 60px;
+}
+
+.menu-section h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.red    { color: #F54748; }
+.yellow { color: #f5a623; }
+
+/* Category buttons */
+.menu-btn {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.menu-btn:hover,
+.menu-btn.active {
+  background-color: #F54748;
+  color: white;
+  border-color: #F54748;
+}
+
+/* ===== Row me extra top space — image overflow ke liye ===== */
+#menuRow {
+   padding-top: 80px;
+  row-gap: 90px;   
+}
+
+/* ===== col-md-3 ko extra bottom space — button ke liye ===== */
+#menuRow .col-md-3 {
+  padding-bottom: 30px;
+}
+
+/* ===== Section 4 card — Section 2 jaisa ===== */
+.menu-section .food-card {
+  position: relative;
+  background-color: #fde8e8;          /* same pinkish */
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 14px 30px 14px;
+  min-height: 320px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: visible;
+}
+
+/* ===== img-box — image upar overflow ===== */
+.menu-section .img-box {
+  position: absolute;
+  top: -65px;                         /* card ke upar float */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* Arc behind image */
+.menu-section .img-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 12px solid transparent;
+  border-top-color:   #f4a09a;
+  border-right-color: #f4a09a;
+  transform: rotate(-40deg);
+  z-index: 1;
+}
+
+/* Circular image */
+.menu-section .img-box img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;                        /* sec2 jaisa — no hard border */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 2;
+}
+
+/* Price badge — same position as sec2 badge */
+.menu-section .price {
+  position: absolute;
+  bottom: 8px;
+  right: 2px;
+  background: #f6a623;
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  z-index: 4;
+  line-height: 1.3;
+}
+
+/* User avatars */
+.menu-section .user-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+  object-fit: cover;
+}
+
+/* ==============================================
+   SECTION 4 — Menu Cards CSS
+   Apni existing style.css ke end mein add karo
+   ============================================== */
+
+/* Row spacing */
+#menuRow {
+  padding-top: 80px;
+  row-gap: 90px;
+}
+#menuRow .col-md-3 {
+  padding-bottom: 30px;
+}
+
+/* Section 2 row spacing */
+#productRow {
+  padding-top: 80px;
+  row-gap: 90px;
+}
+#productRow .col-3 {
+  padding-bottom: 30px;
+}
+
+/* ===== CARD ===== */
+.sec4-card {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff, #fde8e8);
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 14px 30px 14px;
+  min-height: 370px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: visible;
+}
+
+/* Image outer — card ke upar float */
+.sec4-img-outer {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* Pink arc behind image */
+.sec4-arc {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 12px solid transparent;
+  border-top-color: #f4a09a;
+  border-right-color: #f4a09a;
+  transform: rotate(-40deg);
+  z-index: 1;
+}
+
+/* Circular image */
+.sec4-img-wrap {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  z-index: 2;
+  position: relative;
+}
+.sec4-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge */
+.sec4-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 2px;
+  background: #f6a623;
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  z-index: 4;
+  line-height: 1.3;
+}
+
+/* Card body */
+.sec4-card-body {
+  margin-top: 88px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatars */
+.sec4-avatars { display: flex; }
+.sec4-avatars img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+  object-fit: cover;
+}
+.sec4-avatars img:first-child { margin-left: 0; }
+
+/* Food name */
+.sec4-card-title {
+  color: #F54748;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.sec4-card-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+/* Order Now button — half andar half bahar */
+.sec4-order-btn {
+  width: 65%;
+  background-color: #F54748;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 11px 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 5;
+}
+.sec4-order-btn:hover { background-color: #c4101f; }
+
+
+/* sec 4 end */
+/* sec 5 start */
+/* ============================
+   GLOBAL RESET & BASE
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* ============================
+   SECTION 5 — APP PROMO
+   ============================ */
+.app-section {
+  background-color: #fffbf3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-row {
+  min-height: 100vh;
+}
+
+/* ===== LEFT COLUMN ===== */
+.left-col {
+  padding: 60px 60px 60px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.left-content {
+  max-width: 520px;
+}
+
+/* Heading */
+.main-heading {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 22px;
+}
+
+.text-red {
+  color: #e63946;
+}
+
+.text-orange {
+  color: #f4a900;
+}
+
+/* Description */
+.desc-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+/* Store Badges */
+.badges-row {
+  margin-top: 8px;
+}
+
+.store-badge {
+  height: 42px;
+  width: auto;
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 8px;
+}
+
+.store-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== RIGHT COLUMN ===== */
+.right-col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  min-height: 100vh;
+}
+
+/* Wrapper holds all positioned elements */
+.image-wrapper {
+  position: relative;
+  width: 500px;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- 1. Oval/Background Image (chefback.png) — sab se peeche, z-index 0 ---- */
+.chef-back {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  object-fit: contain;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---- 3. Circle Ring Frame (cheefcircle.png) — chef ke upar frame, z-index 3 ---- */
+.chef-circle-bg {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  object-fit: contain;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---- 2. Chef Image — circular clip, z-index 2 ---- */
+.chef-img2 {
+  position: absolute;
+  z-index: 2;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;          /* circular clip */
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+/* ---- 4. Spice Berries (cheefpot.png) — Top Right, z-index 4 ---- */
+.deco-spices {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 125px;
+  z-index: 4;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.10));
+  animation: floatSpice 4s ease-in-out infinite;
+}
+
+/* ---- 5. Herb / Coriander (cheefseek.png) — Bottom Right, z-index 4 ---- */
+.deco-herb {
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+  width: 170px;
+  z-index: 4;
+  filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.12));
+  animation: floatHerb 5s ease-in-out infinite;
+}
+
+/* ============================
+   DECORATIVE ANIMATIONS
+   ============================ */
+@keyframes floatSpice {
+
+  0%,
+  100% {
+    transform: rotate(5deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(5deg) translateY(-8px);
+  }
+}
+
+@keyframes floatHerb {
+
+  0%,
+  100% {
+    transform: rotate(-8deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(-8deg) translateY(-10px);
+  }
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 991.98px) {
+  .left-col {
+    padding: 50px 30px 30px 30px;
+    justify-content: center;
+  }
+
+  .left-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .badges-row {
+    justify-content: center;
+  }
+
+  .right-col {
+    padding: 20px 20px 60px 20px;
+    min-height: auto;
+  }
+
+  .image-wrapper {
+    width: 360px;
+    height: 360px;
+    margin-top: 40px;
+  }
+
+  .chef-back {
+    width: 360px;
+    height: 360px;
+  }
+
+  .chef-circle-bg {
+    width: 330px;
+    height: 330px;
+  }
+
+  .chef-img, .chef-img2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .deco-spices {
+    width: 90px;
+    top: 15px;
+    right: 8px;
+  }
+
+  .deco-herb {
+    width: 110px;
+    bottom: 15px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .image-wrapper {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  .chef-back {
+    width: 300px;
+    height: 300px;
+  }
+
+  .chef-circle-bg {
+    width: 260px;
+    height: 260px;
+  }
+
+  .chef-img, .chef-img2 {
+    width: 240px;
+    height: 240px;
+  }
+
+  .deco-spices {
+    width: 80px;
+  }
+
+  .deco-herb {
+    width: 95px;
+  }
+}
+
+/* sec 5 end */
+
+/* sec6 start */
+/* ===== FOOTER STYLES ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-section {
+  background-color: #ffffff;
+  padding: 60px 0 30px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Brand */
+.footer-brand {
+  color: #e8192c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+/* Description text */
+.footer-desc {
+  color: #555555;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-media-img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.social-link img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  /* tint icons to orange/gold to match reference */
+  filter: invert(60%) sepia(80%) saturate(400%) hue-rotate(5deg) brightness(1.1);
+}
+
+/* Headings */
+.footer-heading {
+  color: #e8192c;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+/* Nav Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links li a:hover {
+  color: #e8192c;
+}
+
+/* Subscribe Box */
+/* Subscribe Box — two separate elements side by side */
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 340px;
+}
+
+.subscribe-input {
+  flex: 1;
+  min-width: 140px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  padding: 11px 18px;
+  font-size: 0.85rem;
+  color: #555;
+  background: #ebebeb;
+}
+
+.subscribe-input::placeholder {
+  color: #aaa;
+}
+
+.subscribe-btn {
+  background-color: #e8192c;
+  color: #ffffff;
+  border: none;
+  padding: 11px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #c4101f;
+}
+
+/* Divider */
+.footer-divider {
+  border-color: #eeeeee;
+  margin: 40px 0 20px;
+}
+
+/* Copyright */
+.footer-copy {
+  color: #888888;
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+/* sec6 end */
+
+/* ============================
+   ADDITIONAL RESPONSIVE TYPOGRAPHY & LAYOUT
+   ============================ */
+
+@media (max-width: 991.98px) {
+  .text-1 {
+    font-size: 38px;
+  }
+  .sectext {
+    font-size: 38px;
+  }
+  .textsec3 {
+    font-size: 38px;
+  }
+  .menu-section h2 {
+    font-size: 32px;
+  }
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .text-1 {
+    font-size: 32px;
+  }
+  .sectext {
+    font-size: 30px;
+  }
+  .textsec3 {
+    font-size: 30px;
+  }
+  .menu-section h2 {
+    font-size: 26px;
+  }
+  .left-col {
+    padding: 30px 15px;
+  }
+  .right-col {
+    padding: 20px 15px 40px;
+  }
+  /* Footer responsive text centering */
+  .footer-brand, .footer-desc, .footer-heading, .footer-links, .footer-copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .subscribe-box {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #menuRow, #productRow {
+    padding-top: 50px;
+    row-gap: 50px;
+  }
+}
