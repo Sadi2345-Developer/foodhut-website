@@ -1,4 +1,6 @@
-/* sec 1 and 2 start */
+/* ==========================================================================
+   GLOBAL VARIABLES AND BASE STYLES
+   ========================================================================== */
 :root {
   --text-color: #F54748;
   --background-color: #ebdddd;
@@ -10,7 +12,9 @@ body {
   background: linear-gradient(-30deg, var(--background-color), var(--background-color2));
 }
 
-/* ===== NAVBAR ===== */
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
 .nav-links-gap {
   gap: 2rem;
 }
@@ -28,7 +32,9 @@ body {
   white-space: nowrap;
 }
 
-/* ===== SECTION 1 ===== */
+/* ==========================================================================
+   SECTION 1 - HERO AREA
+   ========================================================================== */
 .text-1 {
   font-size: 50px;
   font-weight: 800;
@@ -51,7 +57,7 @@ body {
   color: var(--text-color);
 }
 
-/* Search bar */
+/* Search Bar Component */
 .search-box {
   width: 20rem;
   background: white;
@@ -85,7 +91,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* Play icon */
+/* Media Controls */
 .play-icon {
   width: 38px;
   height: 38px;
@@ -93,12 +99,12 @@ body {
   filter: none !important;
 }
 
-/* Hero image */
+/* Hero Imagery */
 .hero-img {
   margin-right: -2rem;
 }
 
-/* ===== HERO SECTION ARROWS ===== */
+/* Hero Section Visual Indicators (Arrows) */
 .header-section {
   position: relative;
 }
@@ -107,7 +113,7 @@ body {
   position: relative;
 }
 
-/* Arrow 1 — starts at navbar logo level, curves down to "We're Serious" heading */
+/* Top-left decorative arrow */
 .hero-arrow-1 {
   position: absolute;
   top: -20px;
@@ -117,7 +123,6 @@ body {
   pointer-events: none;
 }
 
-/* Arrow 1 Stroke — arrowhead at the tip/end of arrow1 curve */
 .hero-arrow-1-stroke {
   position: absolute;
   top: 80px;
@@ -127,7 +132,7 @@ body {
   pointer-events: none;
 }
 
-/* Arrow 2 — top-right, between navbar "Download App" and hero image */
+/* Top-right decorative arrow */
 .hero-arrow-2 {
   position: absolute;
   top: 30px;
@@ -137,7 +142,6 @@ body {
   pointer-events: none;
 }
 
-/* Arrow 2 Stroke — small arrowhead at top-end of arrow2, pointing toward Download App */
 .hero-arrow-2-stroke {
   position: absolute;
   top: 13px;
@@ -147,7 +151,7 @@ body {
   pointer-events: none;
 }
 
-/* Arrow 3 — below the Download App button in hero left col */
+/* Bottom CTA arrow */
 .hero-arrow-3 {
   display: block;
   width: 20px;
@@ -155,35 +159,38 @@ body {
   margin-left: 10px;
   pointer-events: none;
 }
- /* sec2 start */
- .sec2-wrapper {
+
+/* ==========================================================================
+   SECTION 2 - FEATURES / PRODUCTS
+   ========================================================================== */
+.sec2-wrapper {
   min-height: 420px;
   position: relative;
   overflow: hidden;
 }
 
-/* Top-left dot pattern image */
+/* Decorative Background Elements */
 .sec2-dots-img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120px;     /* apni image ke size ke hisaab se adjust karein */
+  width: 120px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Bottom-right rosemary image */
 .sec2-rosemary-img {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 120px;     /* apni image ke size ke hisaab se adjust karein */
+  width: 120px;
   pointer-events: none;
   z-index: 0;
 }
-.food-card-btn:hover { background-color: #c4101f; }
-.food-card-btn{
-   position: absolute;
+
+/* Card Action Button */
+.food-card-btn {
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -191,8 +198,14 @@ body {
   white-space: nowrap;
   z-index: 5;
 }
- /* sec2 end */
-/* section 3 text design */
+
+.food-card-btn:hover { 
+  background-color: #c4101f; 
+}
+
+/* ==========================================================================
+   SECTION 3 - CHEF / ABOUT US
+   ========================================================================== */
 .textsec3 {
   font-weight: 800;
   font-size: 50px;
@@ -207,18 +220,18 @@ body {
   color: rgb(224, 135, 19);
 }
 
-/* IMAGE SIZE (thori bari like figma) */
 .chef-img {
   max-width: 420px;
 }
 
-/* ICON SIZE (tum yahan images lagao gi) */
 .icon {
   width: 20px;
   height: 20px;
 }
-/* sec 4 start */
 
+/* ==========================================================================
+   SECTION 4 - SPECIAL MENU
+   ========================================================================== */
 .menu-section {
   background: linear-gradient(-30deg, var(--background-color), var(--background-color2));
   padding-top: 60px;
@@ -229,10 +242,10 @@ body {
   font-weight: 800;
 }
 
-.red    { color: #F54748; }
+.red { color: #F54748; }
 .yellow { color: #f5a623; }
 
-/* Category buttons */
+/* Filter Buttons */
 .menu-btn {
   border: 1px solid #ccc;
   background-color: transparent;
@@ -241,6 +254,7 @@ body {
   font-size: 14px;
   transition: 0.3s;
 }
+
 .menu-btn:hover,
 .menu-btn.active {
   background-color: #F54748;
@@ -248,21 +262,20 @@ body {
   border-color: #F54748;
 }
 
-/* ===== Row me extra top space — image overflow ke liye ===== */
+/* Grid Layout Spacing for Overlapping Elements */
 #menuRow {
-   padding-top: 80px;
-  row-gap: 90px;   
+  padding-top: 80px;
+  row-gap: 90px; 
 }
 
-/* ===== col-md-3 ko extra bottom space — button ke liye ===== */
 #menuRow .col-md-3 {
   padding-bottom: 30px;
 }
 
-/* ===== Section 4 card — Section 2 jaisa ===== */
+/* Menu Card Design */
 .menu-section .food-card {
   position: relative;
-  background-color: #fde8e8;          /* same pinkish */
+  background-color: #fde8e8;
   border-radius: 20px;
   border: none;
   display: flex;
@@ -275,10 +288,10 @@ body {
   overflow: visible;
 }
 
-/* ===== img-box — image upar overflow ===== */
+/* Floating Image Box */
 .menu-section .img-box {
   position: absolute;
-  top: -65px;                         /* card ke upar float */
+  top: -65px;
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
@@ -289,32 +302,30 @@ body {
   z-index: 3;
 }
 
-/* Arc behind image */
+/* Decorative Arc Graphic */
 .menu-section .img-box::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 50%;
   border: 12px solid transparent;
-  border-top-color:   #f4a09a;
+  border-top-color: #f4a09a;
   border-right-color: #f4a09a;
   transform: rotate(-40deg);
   z-index: 1;
 }
 
-/* Circular image */
 .menu-section .img-box img {
   width: 128px;
   height: 128px;
   border-radius: 50%;
   object-fit: cover;
-  border: none;                        /* sec2 jaisa — no hard border */
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   position: relative;
   z-index: 2;
 }
 
-/* Price badge — same position as sec2 badge */
+/* Pricing and User Indicators */
 .menu-section .price {
   position: absolute;
   bottom: 8px;
@@ -329,7 +340,6 @@ body {
   line-height: 1.3;
 }
 
-/* User avatars */
 .menu-section .user-img {
   width: 26px;
   height: 26px;
@@ -339,30 +349,17 @@ body {
   object-fit: cover;
 }
 
-/* ==============================================
-   SECTION 4 — Menu Cards CSS
-   Apni existing style.css ke end mein add karo
-   ============================================== */
-
-/* Row spacing */
-#menuRow {
-  padding-top: 80px;
-  row-gap: 90px;
-}
-#menuRow .col-md-3 {
-  padding-bottom: 30px;
-}
-
-/* Section 2 row spacing */
+/* Section 4 Grid Spacing */
 #productRow {
   padding-top: 80px;
   row-gap: 90px;
 }
+
 #productRow .col-3 {
   padding-bottom: 30px;
 }
 
-/* ===== CARD ===== */
+/* Enhanced Section 4 Cards */
 .sec4-card {
   position: relative;
   background: linear-gradient(180deg, #ffffff, #fde8e8);
@@ -378,7 +375,6 @@ body {
   overflow: visible;
 }
 
-/* Image outer — card ke upar float */
 .sec4-img-outer {
   position: absolute;
   top: -65px;
@@ -392,7 +388,6 @@ body {
   z-index: 3;
 }
 
-/* Pink arc behind image */
 .sec4-arc {
   position: absolute;
   inset: 0;
@@ -404,7 +399,6 @@ body {
   z-index: 1;
 }
 
-/* Circular image */
 .sec4-img-wrap {
   width: 128px;
   height: 128px;
@@ -414,13 +408,13 @@ body {
   z-index: 2;
   position: relative;
 }
+
 .sec4-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Badge */
 .sec4-badge {
   position: absolute;
   bottom: 8px;
@@ -435,7 +429,6 @@ body {
   line-height: 1.3;
 }
 
-/* Card body */
 .sec4-card-body {
   margin-top: 88px;
   flex: 1;
@@ -445,7 +438,6 @@ body {
   align-items: center;
 }
 
-/* Avatars */
 .sec4-avatars { display: flex; }
 .sec4-avatars img {
   width: 26px;
@@ -457,7 +449,6 @@ body {
 }
 .sec4-avatars img:first-child { margin-left: 0; }
 
-/* Food name */
 .sec4-card-title {
   color: #F54748;
   font-weight: 700;
@@ -465,7 +456,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* Description */
 .sec4-card-desc {
   font-size: 0.82rem;
   color: #666;
@@ -474,7 +464,6 @@ body {
   flex: 1;
 }
 
-/* Order Now button — half andar half bahar */
 .sec4-order-btn {
   width: 65%;
   background-color: #F54748;
@@ -492,29 +481,12 @@ body {
   transform: translate(-50%, 50%);
   z-index: 5;
 }
+
 .sec4-order-btn:hover { background-color: #c4101f; }
 
-
-/* sec 4 end */
-/* sec 5 start */
-/* ============================
-   GLOBAL RESET & BASE
-   ============================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  overflow-x: hidden;
-}
-
-/* ============================
-   SECTION 5 — APP PROMO
-   ============================ */
+/* ==========================================================================
+   SECTION 5 - MOBILE APP PROMOTION
+   ========================================================================== */
 .app-section {
   background-color: #fffbf3;
   min-height: 100vh;
@@ -526,7 +498,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== LEFT COLUMN ===== */
 .left-col {
   padding: 60px 60px 60px 80px;
   display: flex;
@@ -537,7 +508,6 @@ body {
   max-width: 520px;
 }
 
-/* Heading */
 .main-heading {
   font-size: clamp(1.6rem, 3vw, 2.5rem);
   font-weight: 800;
@@ -546,15 +516,9 @@ body {
   margin-bottom: 22px;
 }
 
-.text-red {
-  color: #e63946;
-}
+.text-red { color: #e63946; }
+.text-orange { color: #f4a900; }
 
-.text-orange {
-  color: #f4a900;
-}
-
-/* Description */
 .desc-text {
   font-size: 0.95rem;
   color: #555;
@@ -563,7 +527,6 @@ body {
   max-width: 420px;
 }
 
-/* Store Badges */
 .badges-row {
   margin-top: 8px;
 }
@@ -581,7 +544,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== RIGHT COLUMN ===== */
+/* App Showcase Graphics */
 .right-col {
   position: relative;
   display: flex;
@@ -591,7 +554,6 @@ body {
   min-height: 100vh;
 }
 
-/* Wrapper holds all positioned elements */
 .image-wrapper {
   position: relative;
   width: 500px;
@@ -601,7 +563,7 @@ body {
   justify-content: center;
 }
 
-/* ---- 1. Oval/Background Image (chefback.png) — sab se peeche, z-index 0 ---- */
+/* Background Oval */
 .chef-back {
   position: absolute;
   width: 430px;
@@ -613,7 +575,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ---- 3. Circle Ring Frame (cheefcircle.png) — chef ke upar frame, z-index 3 ---- */
+/* Circular Frame */
 .chef-circle-bg {
   position: absolute;
   width: 370px;
@@ -625,13 +587,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ---- 2. Chef Image — circular clip, z-index 2 ---- */
+/* Featured Chef Image */
 .chef-img2 {
   position: absolute;
   z-index: 2;
   width: 330px;
   height: 330px;
-  border-radius: 50%;          /* circular clip */
+  border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
   object-position: top center;
@@ -641,7 +603,7 @@ body {
   display: block;
 }
 
-/* ---- 4. Spice Berries (cheefpot.png) — Top Right, z-index 4 ---- */
+/* Decorative Assets */
 .deco-spices {
   position: absolute;
   top: 5px;
@@ -652,7 +614,6 @@ body {
   animation: floatSpice 4s ease-in-out infinite;
 }
 
-/* ---- 5. Herb / Coriander (cheefseek.png) — Bottom Right, z-index 4 ---- */
 .deco-herb {
   position: absolute;
   bottom: -15px;
@@ -663,148 +624,26 @@ body {
   animation: floatHerb 5s ease-in-out infinite;
 }
 
-/* ============================
-   DECORATIVE ANIMATIONS
-   ============================ */
+/* Floating Animations */
 @keyframes floatSpice {
-
-  0%,
-  100% {
-    transform: rotate(5deg) translateY(0px);
-  }
-
-  50% {
-    transform: rotate(5deg) translateY(-8px);
-  }
+  0%, 100% { transform: rotate(5deg) translateY(0px); }
+  50% { transform: rotate(5deg) translateY(-8px); }
 }
 
 @keyframes floatHerb {
-
-  0%,
-  100% {
-    transform: rotate(-8deg) translateY(0px);
-  }
-
-  50% {
-    transform: rotate(-8deg) translateY(-10px);
-  }
+  0%, 100% { transform: rotate(-8deg) translateY(0px); }
+  50% { transform: rotate(-8deg) translateY(-10px); }
 }
 
-/* ============================
-   RESPONSIVE
-   ============================ */
-@media (max-width: 991.98px) {
-  .left-col {
-    padding: 50px 30px 30px 30px;
-    justify-content: center;
-  }
-
-  .left-content {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .badges-row {
-    justify-content: center;
-  }
-
-  .right-col {
-    padding: 20px 20px 60px 20px;
-    min-height: auto;
-  }
-
-  .image-wrapper {
-    width: 360px;
-    height: 360px;
-    margin-top: 40px;
-  }
-
-  .chef-back {
-    width: 360px;
-    height: 360px;
-  }
-
-  .chef-circle-bg {
-    width: 330px;
-    height: 330px;
-  }
-
-  .chef-img, .chef-img2 {
-    width: 300px;
-    height: 300px;
-  }
-
-  .deco-spices {
-    width: 90px;
-    top: 15px;
-    right: 8px;
-  }
-
-  .deco-herb {
-    width: 110px;
-    bottom: 15px;
-    right: 5px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .main-heading {
-    font-size: 1.5rem;
-  }
-
-  .image-wrapper {
-    width: 300px;
-    height: 300px;
-    margin-top: 40px;
-  }
-
-  .chef-back {
-    width: 300px;
-    height: 300px;
-  }
-
-  .chef-circle-bg {
-    width: 260px;
-    height: 260px;
-  }
-
-  .chef-img, .chef-img2 {
-    width: 240px;
-    height: 240px;
-  }
-
-  .deco-spices {
-    width: 80px;
-  }
-
-  .deco-herb {
-    width: 95px;
-  }
-}
-
-/* sec 5 end */
-
-/* sec6 start */
-/* ===== FOOTER STYLES ===== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
-}
-
+/* ==========================================================================
+   SECTION 6 - FOOTER
+   ========================================================================== */
 .footer-section {
   background-color: #ffffff;
   padding: 60px 0 30px;
   border-top: 1px solid #f0f0f0;
 }
 
-/* Brand */
 .footer-brand {
   color: #e8192c;
   font-size: 1.8rem;
@@ -813,7 +652,6 @@ body {
   letter-spacing: -0.5px;
 }
 
-/* Description text */
 .footer-desc {
   color: #555555;
   font-size: 0.88rem;
@@ -822,7 +660,6 @@ body {
   max-width: 280px;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
   gap: 12px;
@@ -843,20 +680,13 @@ body {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.social-link:hover {
-  transform: translateY(-2px);
-  opacity: 0.8;
-}
-
 .social-link img {
   display: block;
   width: 22px;
   height: 22px;
-  /* tint icons to orange/gold to match reference */
   filter: invert(60%) sepia(80%) saturate(400%) hue-rotate(5deg) brightness(1.1);
 }
 
-/* Headings */
 .footer-heading {
   color: #e8192c;
   font-size: 1rem;
@@ -865,30 +695,22 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* Nav Links */
 .footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-links li {
-  margin-bottom: 10px;
-}
-
+.footer-links li { margin-bottom: 10px; }
 .footer-links li a {
   color: #555555;
   text-decoration: none;
   font-size: 0.88rem;
   transition: color 0.2s ease;
 }
+.footer-links li a:hover { color: #e8192c; }
 
-.footer-links li a:hover {
-  color: #e8192c;
-}
-
-/* Subscribe Box */
-/* Subscribe Box — two separate elements side by side */
+/* Subscription Component */
 .subscribe-box {
   display: flex;
   align-items: center;
@@ -909,10 +731,6 @@ body {
   background: #ebebeb;
 }
 
-.subscribe-input::placeholder {
-  color: #aaa;
-}
-
 .subscribe-btn {
   background-color: #e8192c;
   color: #ffffff;
@@ -926,81 +744,53 @@ body {
   white-space: nowrap;
 }
 
-.subscribe-btn:hover {
-  background-color: #c4101f;
-}
-
-/* Divider */
 .footer-divider {
   border-color: #eeeeee;
   margin: 40px 0 20px;
 }
 
-/* Copyright */
 .footer-copy {
   color: #888888;
   font-size: 0.82rem;
   text-align: center;
 }
 
-/* sec6 end */
-
-/* ============================
-   ADDITIONAL RESPONSIVE TYPOGRAPHY & LAYOUT
-   ============================ */
-
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
 @media (max-width: 991.98px) {
-  .text-1 {
-    font-size: 38px;
-  }
-  .sectext {
-    font-size: 38px;
-  }
-  .textsec3 {
-    font-size: 38px;
-  }
-  .menu-section h2 {
-    font-size: 32px;
-  }
-  .search-box {
-    max-width: 100%;
-  }
+  .text-1, .sectext, .textsec3 { font-size: 38px; }
+  .menu-section h2 { font-size: 32px; }
+  .left-col { padding: 50px 30px 30px 30px; justify-content: center; }
+  .left-content { text-align: center; max-width: 100%; }
+  .badges-row { justify-content: center; }
+  .right-col { padding: 20px 20px 60px 20px; min-height: auto; }
+  .image-wrapper { width: 360px; height: 360px; margin-top: 40px; }
+  .chef-back { width: 360px; height: 360px; }
+  .chef-circle-bg { width: 330px; height: 330px; }
+  .chef-img2 { width: 300px; height: 300px; }
+  .deco-spices { width: 90px; top: 15px; right: 8px; }
+  .deco-herb { width: 110px; bottom: 15px; right: 5px; }
 }
 
 @media (max-width: 767.98px) {
-  .text-1 {
-    font-size: 32px;
-  }
-  .sectext {
-    font-size: 30px;
-  }
-  .textsec3 {
-    font-size: 30px;
-  }
-  .menu-section h2 {
-    font-size: 26px;
-  }
-  .left-col {
-    padding: 30px 15px;
-  }
-  .right-col {
-    padding: 20px 15px 40px;
-  }
-  /* Footer responsive text centering */
+  .text-1 { font-size: 32px; }
+  .sectext, .textsec3 { font-size: 30px; }
+  .menu-section h2 { font-size: 26px; }
+  .left-col { padding: 30px 15px; }
   .footer-brand, .footer-desc, .footer-heading, .footer-links, .footer-copy {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center; margin-left: auto; margin-right: auto;
   }
-  .social-icons {
-    justify-content: center;
-  }
-  .subscribe-box {
-    justify-content: center;
-    margin: 0 auto;
-  }
-  #menuRow, #productRow {
-    padding-top: 50px;
-    row-gap: 50px;
-  }
+  .social-icons, .subscribe-box { justify-content: center; }
+  #menuRow, #productRow { padding-top: 50px; row-gap: 50px; }
+}
+
+@media (max-width: 575.98px) {
+  .main-heading { font-size: 1.5rem; }
+  .image-wrapper { width: 300px; height: 300px; }
+  .chef-back { width: 300px; height: 300px; }
+  .chef-circle-bg { width: 260px; height: 260px; }
+  .chef-img2 { width: 240px; height: 240px; }
+  .deco-spices { width: 80px; }
+  .deco-herb { width: 95px; }
 }
